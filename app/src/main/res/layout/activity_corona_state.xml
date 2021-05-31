@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Corona_State">
+
+    <TextView
+        android:id="@+id/getStateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="20dp"
+        android:text="STATE NAME"
+        android:textColor="#750404"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="406dp"
+        android:layout_height="552dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="557dp">
+
+            <TableRow android:layout_width="fill_parent">
+
+                <TextView
+                    android:layout_width="224dp"
+                    android:padding="10dp"
+                    android:text="  Contents"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="Total"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#DC8C17">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Total Active"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateActive"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#D3CA22">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Total Confirmed"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateConfirmed"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#F61818">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Total Deaths"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateDeaths"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#35DA09">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Recovered"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateRecover"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="@color/white">
+
+                <TextView />
+
+                <TextView />
+            </TableRow>
+
+            <TableRow android:background="#B81D1D">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Today Confirmed"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateDeltConfi"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#C35252">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Todays Death"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateDeltDeath"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#74EC1F">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Today Recoverd"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tw_getStateDeltaReco"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="@color/white">
+
+                <TextView />
+
+                <TextView />
+            </TableRow>
+
+            <TableRow android:background="#03CC86">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Lastupdatedtime"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateLastUpdatedTime"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="@color/teal_200">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Migratedother"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateMigratdOther"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="@color/purple_500">
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="  Statecode"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tw_getStateCode"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:text="00000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
